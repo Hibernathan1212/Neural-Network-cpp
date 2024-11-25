@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D8CCF28C2C2EC46600C482B1 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D8CCF28B2C2EC46600C482B1 /* main.cpp */; };
+		D8CA2D402C3B86E50002C56D /* Layer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D8CA2D3E2C3B86E50002C56D /* Layer.cpp */; };
+		D8CA2D432C3B88B10002C56D /* NeuralNetwork.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D8CA2D412C3B88B10002C56D /* NeuralNetwork.cpp */; };
+		D8CA2D462C3B893C0002C56D /* Activation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D8CA2D442C3B893C0002C56D /* Activation.cpp */; };
+		D8CA2D492C3B8A280002C56D /* Cost.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D8CA2D472C3B8A280002C56D /* Cost.cpp */; };
+		D8CCF28C2C2EC46600C482B1 /* entry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D8CCF28B2C2EC46600C482B1 /* entry.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +27,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D8CA2D3E2C3B86E50002C56D /* Layer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Layer.cpp; sourceTree = "<group>"; };
+		D8CA2D3F2C3B86E50002C56D /* Layer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Layer.hpp; sourceTree = "<group>"; };
+		D8CA2D412C3B88B10002C56D /* NeuralNetwork.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = NeuralNetwork.cpp; sourceTree = "<group>"; };
+		D8CA2D422C3B88B10002C56D /* NeuralNetwork.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = NeuralNetwork.hpp; sourceTree = "<group>"; };
+		D8CA2D442C3B893C0002C56D /* Activation.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Activation.cpp; sourceTree = "<group>"; };
+		D8CA2D452C3B893C0002C56D /* Activation.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Activation.hpp; sourceTree = "<group>"; };
+		D8CA2D472C3B8A280002C56D /* Cost.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Cost.cpp; sourceTree = "<group>"; };
+		D8CA2D482C3B8A280002C56D /* Cost.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Cost.hpp; sourceTree = "<group>"; };
 		D8CCF2882C2EC46600C482B1 /* Neural network */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Neural network"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D8CCF28B2C2EC46600C482B1 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		D8CCF28B2C2EC46600C482B1 /* entry.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = entry.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +69,15 @@
 		D8CCF28A2C2EC46600C482B1 /* Neural network */ = {
 			isa = PBXGroup;
 			children = (
-				D8CCF28B2C2EC46600C482B1 /* main.cpp */,
+				D8CCF28B2C2EC46600C482B1 /* entry.cpp */,
+				D8CA2D412C3B88B10002C56D /* NeuralNetwork.cpp */,
+				D8CA2D422C3B88B10002C56D /* NeuralNetwork.hpp */,
+				D8CA2D3E2C3B86E50002C56D /* Layer.cpp */,
+				D8CA2D3F2C3B86E50002C56D /* Layer.hpp */,
+				D8CA2D442C3B893C0002C56D /* Activation.cpp */,
+				D8CA2D452C3B893C0002C56D /* Activation.hpp */,
+				D8CA2D472C3B8A280002C56D /* Cost.cpp */,
+				D8CA2D482C3B8A280002C56D /* Cost.hpp */,
 			);
 			path = "Neural network";
 			sourceTree = "<group>";
@@ -119,7 +139,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8CCF28C2C2EC46600C482B1 /* main.cpp in Sources */,
+				D8CCF28C2C2EC46600C482B1 /* entry.cpp in Sources */,
+				D8CA2D462C3B893C0002C56D /* Activation.cpp in Sources */,
+				D8CA2D402C3B86E50002C56D /* Layer.cpp in Sources */,
+				D8CA2D432C3B88B10002C56D /* NeuralNetwork.cpp in Sources */,
+				D8CA2D492C3B8A280002C56D /* Cost.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
