@@ -57,6 +57,8 @@ private:
     
     int m_numCorrect;
     
+    std::mutex mtx;
+    
     //first element is label/correct answer, rest is data
     
     ActivationType m_activationType;

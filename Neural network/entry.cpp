@@ -17,17 +17,17 @@
 
 int main(int argc, const char * argv[]) 
 {
-    Network network( {784, 100, 100, 10}, ActivationType::Sigmoid, CostType::CrossEntropy );
+    Network network( {784, 100, 10}, ActivationType::SiLU, CostType::CrossEntropy );
     
     network.initRandomWeights();
     
-    network.loadData("/Users/nathan/Downloads/mnist dataset/mnist_train.csv", 784, 60000);
+    network.loadData("/Users/nathan/dev/Neural network/Neural network/mnist/mnist_train.csv", 784, 60000);
     
-    network.train(10, 100, 1.0f, 0.1f, 0.9f);
+    network.train(10, 100, 1.0f, 0.01f, 0.9f);
 
     network.clearData();
 
-    network.loadData("/Users/nathan/Downloads/mnist dataset/mnist_test.csv", 784, 10000);
+    network.loadData("/Users/nathan/dev/Neural network/Neural network/mnist/mnist_test.csv", 784, 10000);
     
     network.test();
     
